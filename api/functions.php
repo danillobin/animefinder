@@ -10,6 +10,7 @@ function view( $name, $__args = array() ){
 }
 
 function routing(){
+    print_r($_SERVER['REDIRECT_URL']);
     switch ($_SERVER['REDIRECT_URL']) {
         case '':
         case '/':
