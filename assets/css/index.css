@@ -1,0 +1,233 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+header, main{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+header{
+    align-items: flex-start;
+    display: flex;
+    padding: 20px 20px 10px 20px;
+}
+main{
+    padding: 15px 20px 20px 20px;
+}
+.logo > *{
+    user-select: none;
+}
+.logo{
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+}
+.emblem img{
+    vertical-align: top;
+    height: 28px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+.search-form{
+    margin-left: 103px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+.search-form input{
+    padding: 13px 134px 13px 16px;
+    border: 1px solid #0000001A;
+    border-radius: 7px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    transition: .2s;
+}
+.search-form input:hover{
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+}
+.search-form input:focus{
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+}
+header .search-form input{
+    padding: 9px 115px 9px 12px;
+}
+header .search-form button{
+    padding: 9px 26px;
+}
+.search-form input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+.search-form button{
+    font-size: 16px;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 13px 33px;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    transition: .2s;
+}
+.search-form button:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+p.count-showed, p.max-matches {
+    display: inline-block;
+}
+.matches {
+    font-size: 16px;
+    font-weight: 400;
+}
+ul.foundblocks-container {
+    padding: 0;
+    max-width: 700px;
+    margin: auto;
+}
+ul.foundblocks-container li{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.foundblock{
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+    border-radius: 7px;
+    transition: .2s;
+}
+.foundblock:hover {
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+}
+.foundblock-name {
+    color: black;
+    padding: 18px 16px;
+    display: block;
+}
+.foundblock .info {
+    display: flex;
+    padding: 10px 16px;
+    border-radius: 0 0 7px 7px;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 194, 255, 0.7);
+}
+.foundblock-info {
+    display: flex;
+    justify-content: flex-end;
+}
+.site {
+    user-select: none;
+    display: flex;
+    color: #fff;
+    margin-right: auto;
+}
+.site-domain-logo {
+    height: 20px;
+    width: 20px;
+}
+.site-domain-name {
+    margin-left: 8px;
+}
+.foundblock-distribute, .foundblock-download, .foundblock-magnet {
+    margin-left: 12px;
+}
+.foundblock-magnet img{
+    vertical-align: top;
+    height: 19px;
+}
+.foundblock-distribute, .foundblock-download{
+    display: flex;
+    align-items: center;
+}
+.foundblock-download img, .foundblock-distribute img{
+    margin-right: 5px;
+}
+.foundblock-distribute-count{
+    color: #05DE28;
+}
+.bottom-bar{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+}
+.bottom-bar .more-button{
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    transition: .2s;
+    display: block;
+    width: 120px;
+    margin: auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.bottom-bar .more-button:hover{
+    background: rgba(0, 0, 0, 1);
+}
+/* .pagination-container {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+}
+.pagination {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+a.pagination-href {
+    border-radius: 7px;
+    display: flex;
+    margin: 0 1.5px;
+    min-width: 37px;
+    text-decoration: none;
+    color: #fff;
+    min-height: 41px;
+    background: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+}
+a.pagination-href:hover {
+    background: rgba(0, 0, 0, 0.63);
+}
+a.pagination-href.active {
+    background: rgba(0, 0, 0, 0.7);
+} */
+
+
+
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    header .search-form{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 425px){
+    .foundblock .info{
+        flex-direction: column;
+    }
+    .foundblock-info{
+        margin-top: 10px;
+    }
+    .foundblock-weight, .foundblock-distribute, .foundblock-download, .foundblock-magnet{
+        margin-top: 5px;
+    }
+}
