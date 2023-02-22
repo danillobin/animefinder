@@ -4,6 +4,6 @@
     { "src": "index.php", "use": "vercel-php@0.5.2" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/(.*)",  "dest": "/api/index.php" }
   ]
 }
