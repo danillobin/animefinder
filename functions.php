@@ -11,6 +11,7 @@ function view( $name, $__args = array() ){
 }
 
 function routing(){
+    echo getcwd() . "\n";
     $URI = $_SERVER['REQUEST_URI'];
     switch ($URI) {
         case '':
