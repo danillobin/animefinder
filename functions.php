@@ -16,10 +16,10 @@ function routing(){
         case '':
         case '/':
         case '/index':
-            include_once 'controllers/home.php';
+            include_once './controllers/home.php';
             break;
         case '/find':
-            include_once 'controllers/find.php';
+            include_once './controllers/find.php';
             break;
         default:
             //header("Location: /");
