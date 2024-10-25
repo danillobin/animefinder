@@ -1,5 +1,5 @@
 <?
-print_r($_SERVER);
+// print_r($_SERVER);
 function getComponent( $name, $__args = array() ){
     extract($__args);
     require("components/$name.php");
@@ -11,7 +11,7 @@ function view( $name, $__args = array() ){
 }
 
 function routing(){
-    $URI = $_SERVER['REDIRECT_URL'];
+    $URI = $_SERVER['REQUEST_URI'];
     switch ($URI) {
         case '':
         case '/':
