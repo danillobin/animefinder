@@ -1,5 +1,4 @@
 <?
-// print_r($_SERVER);
 function getComponent( $name, $__args = array() ){
     extract($__args);
     require("components/$name.php");
@@ -11,8 +10,7 @@ function view( $name, $__args = array() ){
 }
 
 function routing(){
-    echo getcwd() . "\n";
-    $URI = $_SERVER['REQUEST_URI'];
+    $URI = $_SERVER['REDIRECT_URL'];
     switch ($URI) {
         case '':
         case '/':
@@ -23,7 +21,7 @@ function routing(){
             include_once './controllers/find.php';
             break;
         default:
-            //header("Location: /");
+            header("Location: /");
             break;
     }
 }
