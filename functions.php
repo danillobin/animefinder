@@ -1,4 +1,5 @@
 <?
+print_r($_SERVER);
 function getComponent( $name, $__args = array() ){
     extract($__args);
     require("components/$name.php");
