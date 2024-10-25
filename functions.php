@@ -22,7 +22,7 @@ function routing(){
             include_once 'controllers/find.php';
             break;
         default:
-            header("Location: /");
+            //header("Location: /");
             break;
     }
 }
